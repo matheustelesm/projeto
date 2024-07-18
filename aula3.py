@@ -1,0 +1,5 @@
+print(1234)
+print('olá "Matheus"')
+print("olá \"Matheus\"")
+print(r"olá \"Matheus\"")
+print('Explícito', 'é', 'melhor " do que implícito')
