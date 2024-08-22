@@ -19,5 +19,5 @@ print(nome, idade, maior_de_idade)
 print('nome:', nome)
 print('idade:', idade)
 print('é maior?:', maior_de_idade) 
-      
+    
 
