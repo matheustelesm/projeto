@@ -1,6 +1,6 @@
 linhas = 2
 colunas = 2
- 
+
 linha = 1
 while linha <= linhas:
     coluna = 1
