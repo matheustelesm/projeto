@@ -14,5 +14,12 @@ Operação ternária (condicional de uma linha)
 # novo_digito = 0 if digito > 9 else digito
 # print(novo_digito)
 
-print('Valor' if False else 'Outro valor' if False else 'fim')
+# print('Valor' if False else 'Outro valor' if False else 'fim')
 
+precos = [100, 200, 400 , 1500, 2000]
+
+def imposto(preco):
+    return preco * 0.5
+
+imposto2 = list(map(imposto, precos))
+print(imposto2)
