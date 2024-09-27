@@ -48,18 +48,18 @@
 # 2. Fatorial de um número
 # Crie um programa que calcule o fatorial de um número inteiro fornecido pelo usuário.
 
-num = int(input("Digite um número: "))
+# num = int(input("Digite um número: "))
 
-fatorial = 1
-for i in range(1, num + 1):
-    fatorial *= i
-print(f"O fatorial de {num} é {fatorial}")
+# fatorial = 1
+# for i in range(1, num + 1):
+#     fatorial *= i
+# print(f"O fatorial de {num} é {fatorial}")
 
 
 # 3. Contagem de vogais em uma string
 # Crie um programa que peça ao usuário para inserir uma string e conte quantas vogais (a, e, i, o, u) ela contém.
 
-palavra = str(input("Digite uma palavra: "))
+# palavra = str(input("Digite uma palavra: "))
 
 
 
@@ -73,3 +73,49 @@ palavra = str(input("Digite uma palavra: "))
 
 # 6. Calculadora Simples
 # Escreva um programa que funcione como uma calculadora básica, capaz de somar, subtrair, multiplicar e dividir dois números.
+
+
+#FILTER
+
+# precos1 = [5000, 9000, 2000, 15000]
+
+# def aumento(preco):
+#     if preco > 6000:
+#         return True
+#     else:
+#         return False
+    
+# precos2 = list(filter(aumento, precos1))
+
+# aplicar = [preco * 1.1 for preco in precos2 if preco > 6000]
+
+# print('(lista original)')
+# print(*precos1, sep='\n')
+# print(10*'-')
+# print('(lista dos produtos que eu quero alterar)')
+# print(*precos2, sep='\n')
+# print(10*'-')
+# print('(lista com os produtos alterados)')
+# print(*aplicar, sep='\n')
+
+#LAMBDA
+# precos2 = list(filter(lambda preco: preco * 1.1 > 6000, precos1))
+# print(precos2)
+
+
+# preco = 1000
+
+# def calcular_imposto(preco):
+#     return preco * 0.3
+
+# print(calcular_imposto(preco))
+
+# preco2 = 1000
+# calcular_imposto2 = lambda x: x * 0.3
+# print(calcular_imposto2(preco2))
+
+
+precos = [100, 500, 10, 25]
+
+impostos = list(map( lambda x: x * 0.3, filter(lambda x: x > 50, precos)))
+print(impostos)
